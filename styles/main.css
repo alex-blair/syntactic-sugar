@@ -1,1 +1,9 @@
 body {font-family: 'Raleway', sans-serif;}
+.links {
+  background-color: rgba(45, 212, 222, 0.48);
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
