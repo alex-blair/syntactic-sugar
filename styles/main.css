@@ -1,9 +1,8 @@
 body {font-family: 'Raleway', sans-serif;
 margin: 0}
+
 .links {
   background-color: #6dabba;
-  text-decoration: none;
-  color: black;
   display: flex;
   justify-content: space-around;
   height: 50px;
