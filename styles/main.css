@@ -1,6 +1,6 @@
 body {font-family: 'Raleway', sans-serif;
 margin: 0}
-.links:link, .links:visited {
+.links {
   background-color: #6dabba;
   text-decoration: none;
   color: black;
@@ -9,11 +9,6 @@ margin: 0}
   height: 50px;
   vertical-align: middle;
   line-height: 50px;
-}
-
-.links:hover {
-  color: white;
-  text-decoration: none;
 }
 
 .content {
