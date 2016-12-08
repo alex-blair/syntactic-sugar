@@ -14,7 +14,7 @@ margin: 0}
   text-decoration: none;
 }
 
-.links:hover, .links:active {
+.links:hover {
   color: white;
   text-decoration: none;
 }
