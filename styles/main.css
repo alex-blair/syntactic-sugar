@@ -30,7 +30,14 @@ a:link {
 
 a:-webkit-any-link {
   text-decoration: none;
-  color: #a9b4bc
+}
+
+.colored-link {
+  color: #a9b4bc;
+}
+
+.white-link {
+  color: white;
 }
 
 /* Images
