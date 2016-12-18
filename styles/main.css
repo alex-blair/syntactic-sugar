@@ -5,9 +5,26 @@
   text-align: center;
 }
 
+.section-middle {
+  padding: 7rem 0rem 7rem;
+  text-align: center;
+}
+
 /* Title
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .title {
   color: white;
   background-color: #6dabba;
+}
+
+/* Blog Posts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.blog-posts {
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+  color: white;
+  background-color: #2e393e;
 }
