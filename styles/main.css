@@ -1,20 +1,70 @@
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section {
-  padding: 3rem 0rem 3rem;
+.title-section {
+  padding: 2rem 0rem 2rem;
   text-align: center;
+  color: white;
+  background-color: #6dabba;
+  margin-bottom: 3rem;
 }
 
-.section-middle {
+.middle-section {
   padding: 7rem 0rem 7rem;
   text-align: center;
 }
 
-/* Title
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.title {
+.footer-section {
+  padding: 2rem 0rem 2rem;
+  text-align: center;
   color: white;
-  background-color: #6dabba;
+  background-color: #fff292;
+  margin-top: 3rem;
+}
+
+/* Bubbles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.title-bubble {
+  margin: 2rem 0rem 3rem;
+}
+
+.bubble {
+  background-color: #dc7eb1;
+  height: 100px;
+  line-height: 100px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 1rem;
+  border: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.bubble-padding {
+  padding: 1rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.bubble-text {
+  margin: 0;
+}
+
+.blog-links {
+  text-align: center;
+}
+
+/* Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon {
+  color: white;
+}
+
+.icon-bubble {
+  margin: 3rem 0rem 3rem;
 }
 
 /* Blog Posts
@@ -27,18 +77,19 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a:link {
   text-decoration: none;
+  color: #6dabba;
 }
 
 a:-webkit-any-link {
   text-decoration: none;
 }
 
-.colored-link {
-  color: #a9b4bc;
-}
-
 .white-link {
   color: white;
+}
+
+.reference {
+  color: #dc7eb1;;
 }
 
 /* Images
@@ -55,7 +106,11 @@ a:-webkit-any-link {
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.footer {
-  color: white;
-  background-color: #2e393e;
+.footer-text {
+  margin:0;
+}
+
+.email-link {
+  text-decoration: none;
+  color: #6dabba;
 }
