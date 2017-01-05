@@ -54,72 +54,76 @@
 
     <div class="section-middle blog-posts">
       <div class="container">
-        <h3>Design wishlist</h3>
-        <p>
-          After getting seriously distracted looking up examples of CSS design, I've come up with a wishlist of features I want to add:
-        </p>
-        <p>
-          <ul>
-            <li>
-              horizontal sections to break up the page like on <a class="reference" href = "https://www.postable.com/">Postable</a>;
-            </li>
-            <li>
-              a mixture of bright colours like on <a class="reference" href = "http://www.windowsofnewyork.com/">Windows of New York</a>;
-            </li>
-            <li>
-              page links contained within quirky shapes that change colour when you hover over them like on <a class="reference" href = "http://lp-sf.com/">Lab Partners</a>;
-            </li>
-            <li>
-              silhouetted background images like on <a class="reference" href = "http://www.csszengarden.com/177/">Zen City Morning</a>;
-            </li>
-            <li>
-              an image that follows you down the page as you scroll down, allowing you to return to the top of the page with a simple click like on <a class="reference" href = "http://www.nolowenenowak.com/">Nolowene Nolak</a>;
-            </li>
-            <li>
-              whatever wonderful wizardry was used to get the stylus to break into different parts as you scroll down the page on <a class="reference" href = "http://www.fiftythree.com/pencil">Pencil</a>; and
-            </li>
-            <li>
-              interesting complementary fonts like on <a class="reference" href = "http://www.mammothbooth.com/#/how-it-works.html">MammothBooth!</a>
-            </li>
-          </ul>
-        </p>
-        <h3>HTML, CSS and the DOM</h3>
-        <p>
-          This week we’re learning about the relationship between HTML, CSS and the Document Object Model (“the DOM”). We’ve been asked to think of an analogy to describe these concepts. I like the (admittedly loose) analogy of making coffee:
-        </p>
-        <p>
-          <img class ="image1" src="../images/coffee.jpg" alt=""/>
-        </p>
-        <p>
-          <ul>
-            <li>
-              HTML would be the coffee beans, water and other ingredients (milk, heat, pressure etc). You can make a bunch of different drinks by tweaking these factors.
-            </li>
-            <li>
-              The web browser would be the coffee machine, which processes all the ingredients.
-            </li>
-            <li>
-              Then you have the DOM, which is the coffee itself.
-            </li>
-            <li>
-              Then finally, CSS. CSS is the fluffiness of the milk; the colour of the mug you present the coffee in; the cinnamon or chocolate powder on top. Basically, anything which changes the appearance of the drink, but not the underlying coffee itself.
-            </li>
-          </ul>
-        </p>
-        <p>
-          I guess in this analogy the web developer would be the barista... You get the idea.
-        </p>
-        <h3>Boxifying design</h3>
-        <p>
-          “Boxifying” involves visualising the layout of a webpage as a series of different shaped boxes. You start by breaking down the page into big boxes for the general layout, then go smaller and smaller for the more detailed pieces of design. Designing with boxes has the advantage that if you want to move things around at a later date, the parts will fit together more easily than if everything item had a unique footprint. I think of it like moving furniture around a room. It’s easier to change the layout if the walls are straight instead of curved, and the furniture has flat edges instead of pointy bits.
-        </p>
-        <h3>Boxes within boxes</h3>
-        <p>
-          The elements of a website can be broken down further. At the heart of each box is content, which is nestled in padding and surrounded by a border. At the very outside of the box is the margin. This is the “box model”, depicted below. Resizing a certain aspect of the box can change the total footprint of the element.
-        </p>
-        <p>
-          <img class ="image2" src="../images/boxmodel.jpg" alt=""/>
-        </p>
+        <div class="row">
+          <div class="ten columns offset-by-one">
+            <h3>Design wishlist</h3>
+            <p>
+              After getting seriously distracted looking up examples of CSS design, I've come up with a wishlist of features I want to add:
+            </p>
+            <p>
+              <ul>
+                <li>
+                  horizontal sections to break up the page like on <a class="reference" href = "https://www.postable.com/">Postable</a>;
+                </li>
+                <li>
+                  a mixture of bright colours like on <a class="reference" href = "http://www.windowsofnewyork.com/">Windows of New York</a>;
+                </li>
+                <li>
+                  page links contained within quirky shapes that change colour when you hover over them like on <a class="reference" href = "http://lp-sf.com/">Lab Partners</a>;
+                </li>
+                <li>
+                  silhouetted background images like on <a class="reference" href = "http://www.csszengarden.com/177/">Zen City Morning</a>;
+                </li>
+                <li>
+                  an image that follows you down the page as you scroll down, allowing you to return to the top of the page with a simple click like on <a class="reference" href = "http://www.nolowenenowak.com/">Nolowene Nolak</a>;
+                </li>
+                <li>
+                  whatever wonderful wizardry was used to get the stylus to break into different parts as you scroll down the page on <a class="reference" href = "http://www.fiftythree.com/pencil">Pencil</a>; and
+                </li>
+                <li>
+                  interesting complementary fonts like on <a class="reference" href = "http://www.mammothbooth.com/#/how-it-works.html">MammothBooth!</a>
+                </li>
+              </ul>
+            </p>
+            <h3>HTML, CSS and the DOM</h3>
+            <p>
+              This week we’re learning about the relationship between HTML, CSS and the Document Object Model (“the DOM”). We’ve been asked to think of an analogy to describe these concepts. I like the (admittedly loose) analogy of making coffee:
+            </p>
+            <p>
+              <img class ="image1" src="../images/coffee.jpg" alt=""/>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  HTML would be the coffee beans, water and other ingredients (milk, heat, pressure etc). You can make a bunch of different drinks by tweaking these factors.
+                </li>
+                <li>
+                  The web browser would be the coffee machine, which processes all the ingredients.
+                </li>
+                <li>
+                  Then you have the DOM, which is the coffee itself.
+                </li>
+                <li>
+                  Then finally, CSS. CSS is the fluffiness of the milk; the colour of the mug you present the coffee in; the cinnamon or chocolate powder on top. Basically, anything which changes the appearance of the drink, but not the underlying coffee itself.
+                </li>
+              </ul>
+            </p>
+            <p>
+              I guess in this analogy the web developer would be the barista... You get the idea.
+            </p>
+            <h3>Boxifying design</h3>
+            <p>
+              “Boxifying” involves visualising the layout of a webpage as a series of different shaped boxes. You start by breaking down the page into big boxes for the general layout, then go smaller and smaller for the more detailed pieces of design. Designing with boxes has the advantage that if you want to move things around at a later date, the parts will fit together more easily than if everything item had a unique footprint. I think of it like moving furniture around a room. It’s easier to change the layout if the walls are straight instead of curved, and the furniture has flat edges instead of pointy bits.
+            </p>
+            <h3>Boxes within boxes</h3>
+            <p>
+              The elements of a website can be broken down further. At the heart of each box is content, which is nestled in padding and surrounded by a border. At the very outside of the box is the margin. This is the “box model”, depicted below. Resizing a certain aspect of the box can change the total footprint of the element.
+            </p>
+            <p>
+              <img class ="image2" src="../images/boxmodel.jpg" alt=""/>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
