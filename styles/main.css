@@ -103,6 +103,13 @@ a:-webkit-any-link {
   color: #6dabba;
 }
 
+/* Bullets
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul li {
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .wireframe {
