@@ -25,7 +25,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .title-bubble {
   margin: 2rem 0rem 3rem;
-  color: white;
 }
 
 .bubble {
@@ -82,7 +81,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a:link {
   text-decoration: none;
-  color: #6dabba;
 }
 
 a:-webkit-any-link {
@@ -93,19 +91,6 @@ a:-webkit-any-link {
   color: white;
 }
 
-@media (min-width: 400px) {
-    .white-link {
-        color: white;
-    }
-}
-
-@media (min-width: 400px) {
-    .white-link {
-        background-color: red;
-    }
-}
-
-
 .white-link:hover {
   color: #9479c5;
 }
@@ -113,6 +98,7 @@ a:-webkit-any-link {
 .reference {
   color: #dc7eb1;;
 }
+
 .reference:hover {
   color: #6dabba;
 }
