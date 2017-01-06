@@ -93,6 +93,12 @@ a:-webkit-any-link {
   color: white;
 }
 
+@media (min-width: 600px) {
+    .white-link {
+        color: white;
+    }
+}
+
 .white-link:hover {
   color: #9479c5;
 }
