@@ -8,6 +8,26 @@
   margin-bottom: 3rem;
 }
 
+.blog-title-section
+{
+  padding: 2rem 0rem 2rem;
+  text-align: center;
+  color: #9479c5;
+  background-color: white;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+
+.blog-image-section
+{
+  padding: 1.5rem 0rem 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: #9479c5;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+}
+
 .middle-section {
   padding: 7rem 0rem 7rem;
   text-align: center;
@@ -55,6 +75,19 @@
 
 .blog-links {
   text-align: center;
+}
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.quote {
+  font-family: 'Reenie Beanie', cursive;
+  margin-bottom: 0;
+}
+
+.quote-author {
+  font-family: 'Reenie Beanie', cursive;
+  margin-bottom: 0;
+  text-align: right;
 }
 
 /* Icons
@@ -112,14 +145,24 @@ ul li {
 
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.wireframe {
-  margin: 3rem auto;
-  max-width: 30rem;
+.center-img {
+  text-align: center;
 }
 
-.wireframe {
-  margin: 3rem auto;
-  max-width: 30rem;
+.wireframe-img {
+  max-width: 50%;
+  height: auto;
+}
+
+#coffee-img {
+	max-width: 100%;
+	height: auto;
+}
+
+#boxmodel-img {
+	max-width: 50%;
+	height: auto;
+  text-align: center;
 }
 
 /* Footer
