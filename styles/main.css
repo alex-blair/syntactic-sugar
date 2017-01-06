@@ -37,7 +37,7 @@
   padding: 1rem;
   border: 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -61,6 +61,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
   color: white;
+}
+
+.icon:hover {
+  color: #9479c5;
 }
 
 .icon-bubble {
@@ -88,8 +92,15 @@ a:-webkit-any-link {
   color: white;
 }
 
+.white-link:hover {
+  color: #9479c5;
+}
+
 .reference {
   color: #dc7eb1;;
+}
+.reference:hover {
+  color: #6dabba;
 }
 
 /* Images
