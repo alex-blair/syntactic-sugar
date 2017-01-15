@@ -80,11 +80,30 @@
           <div class="ten columns offset-by-one">
             <h4>Javascript vs HTML and CSS</h4>
             <p>
-
+              This week I was transported back to my high school days of problem solving in maths, using a part of my brain that's mostly been on vacation these past few years. Welcome to the world of JavaScript! Time to get back to work Brain, you slacker.
+            </p>
+            <p>
+              So far we've been learning about HTML, the bread and butter of websites, and CSS, what you use to make everything pretty. Now we're starting to learn JavaScript - the thing that makes websites interactive.
+            </p>
+            <p>
+              JavaScript tells the browser how to change the web page in response to certain events (like a user clicking on a link, or filling out the details of a form).
             </p>
             <h4>Control flow and loops</h4>
             <p>
-
+              Control flow is the concept of controlling how your code runs under different conditions or until a certain condition is met. One way to do this is through if/else statements. These tell the browser to run code if certain conditions are true. Using an everyday example, you might want to choose to set yourself a limit of 6 cups of tea a day. In this case, if you had drunk less than 6 cups on a particular day, you could make yourself a fresh pot, else you'd have to stick with water. Here's an example of this if/else statement in code:
+            <pre><code>var cupOfTeaTally = 3
+  if (cupOfTeaTally < 6) {
+    console.log ("Put the kettle on!");
+  } else {
+    console.log ("I think you've had enough.");
+  } // Put the kettle on!</code></pre>
+  (Except this example doesn't really make sense, because you can never have too much tea.)
+            </p>
+            <p>
+              If you wanted to run a piece of code a number of times, you could keep writing it out until you got the result you wanted, but that's a bit time-consuming. Loops allow you to carry out an action multiple times without having to repeat yourself. For instance, if you wanted to list of all the cups of tea you had really gone through in a day but you didn't want to write the same sentence over and over you could use a <strong>for</strong> loop like this:
+              <pre><code>for(i=1; i<21; i++){
+  console.log("This is cup number " + i);
+};</code></pre>
             </p>
             <h4>Arrays and objects</h4>
             <p>
