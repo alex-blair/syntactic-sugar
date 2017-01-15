@@ -90,17 +90,17 @@
             </p>
             <h4>Control flow and loops</h4>
             <p>
-              Control flow is the concept of controlling how your code runs under different conditions or until a certain condition is met. One way to do this is through if/else statements. These tell the browser to run code if certain conditions are true. Using an everyday example, you might want to choose to set yourself a limit of 6 cups of tea a day. In this case, if you had drunk less than 6 cups on a particular day, you could make yourself a fresh pot, else you'd have to stick with water. Here's an example of this if/else statement in code:
+              Control flow is the concept of controlling how your code runs under different conditions or until a certain condition is met. One way to do this is through if/else statements. These tell the browser to run code if certain conditions are true. Using an everyday example, you might choose to set yourself a limit of 6 cups of tea a day. In this case, if you have had less than 6 cups on a particular day, you could make yourself a fresh pot, else you'd have to stick with water. Here's an example of this if/else statement in code:
             <pre><code>var cupOfTeaTally = 3
-  if (cupOfTeaTally < 6) {
-    console.log ("Put the kettle on!");
-  } else {
-    console.log ("I think you've had enough.");
-  } // Put the kettle on!</code></pre>
+if (cupOfTeaTally < 6) {
+  console.log ("Put the kettle on!");
+} else {
+  console.log ("I think you've had enough.");
+} // Put the kettle on!</code></pre>
   (Except this example doesn't really make sense, because you can never have too much tea.)
             </p>
             <p>
-              If you wanted to run a piece of code a number of times, you could keep writing it out until you got the result you wanted, but that's a bit time-consuming. Loops allow you to carry out an action multiple times without having to repeat yourself. For instance, if you wanted to list of all the cups of tea you had really gone through in a day but you didn't want to write the same sentence over and over you could use a <strong>for</strong> loop like this:
+              If you wanted to run a piece of code a number of times, you could keep writing it out until you got the right result, but that's a bit time-consuming. Loops allow you to carry out an action multiple times without having to repeat yourself. For instance, if you wanted to list of all the cups of tea you had gone through in a day but you didn't want to write the same sentence over and over you could use a <strong>for</strong> loop like this:
               <pre><code>for(i=1; i<21; i++){
   console.log("This is cup number " + i);
 };</code></pre>
