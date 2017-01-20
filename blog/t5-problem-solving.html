@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
 
@@ -78,10 +78,61 @@
       <div class="container">
         <div class="row">
           <div class="ten columns offset-by-one">
-            <h4></h4>
+            <div class="ten columns offset-by-one">
+            <h4>That time I got stuck</h4>
+            <p>
+              I've been told "there is no magic in programming", and once you realise that it becomes a whole lot easier to solve problems. i.e. the function you wrote is returning an error message because you've forgotten a semicolon, not because your computer has somehow gained sentience and has decided to behave different from all other computers.
+            </p>
+            <p>
+              The "no magic" thing seems like a good place to start, but it didn't prevent me from going in circles for two hours the other day when I was stuck on an assignment. I was trying to select all the elements in an array using the <code>.children</code>property, then loop through each element using a for loop and <code>classList.contains</code> to check for certain class properties. I was pretty I was using the right language, but it wasn't working and I had no idea why.
+            </p>
+            <p>
+              I spent a while googling key concepts, but that didn't give me an answer. I then tried googling the error message, but that didn't help either. So I tried a mixture of pseudocode and the "rubber ducky" method (where you describe the problem you're having to an inanimate object like a rubber duck, except I was working in a room filled with other people and didn't want to look crazy so I typed my explanation in a blank email).
+            </p>
+            <p>
+              By the time I had typed out 80% of the problem I was trying to solve, I felt like I knew the topic pretty well. I was also pretty sure I was on the right track with my answer. So I turned back to my code with fresh eyes, and - </p><pre>  there
+
+         was
+
+              no
+
+                  closing
+
+                           bracket.
+              </pre>
+              *Sigh* How did I miss that? Compare that to earlier this week when I had to work through this problem -
+            <p></p>
+            <p>
+              <em>Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.</em>
+            </p>
+            <p>
+              <em>When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).</em>
+            </p>
+            <p>
+              I started by breaking it down into pieces of pseudocode (e.g. if number divides by 3 and 5, print 'FizzBuzz') and asking myself lots of questions (e.g. how do you work out if a number divides by another number?). I came up with the following solution: </p><pre><code>for (var count = 1; count &lt; 101; count++) {
+  if ((count % 5) + (count % 3) === 0) {
+    console.log("FizzBuzz");
+  } else if (count % 3 === 0) {
+    console.log("Fizz")
+  } else if (count % 5 === 0) {
+    console.log("Buzz")
+  } else {
+    console.log(count);
+  }
+}</code>
+
+              </pre>
+            <p></p>
+
+            <h4>Problem-solving techniques</h4>
             <p>
 
             </p>
+            <h4>3 JavaScript functions broken down</h4>
+            <p>
+
+            </p>
+          </div>
           </div>
         </div>
       </div>
