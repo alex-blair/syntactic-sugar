@@ -156,18 +156,30 @@
               </ul>
 
             </p>
-            <h4>3 JavaScript functions broken down</h4>
+            <h4>Three JavaScript functions</h4>
             <p>
-              In case you wanted to know a bit more about JavaScript, here are three functions summarised in (what I hope is) plain English:
+              In case you are curious, here are three JavaScript functions summarised in very simple terms:
             </p>
             <h6><strong>.map()</strong></h6>
             <p>
+              Can be used to apply a formula (or function) to each element in an array. E.g. if you had a list of numbers and you wanted to find the square root of each one, you could use the <code>.map()</code>method with an appropriate function and it you return you an array of square roots (one for each number you passed through the equation).
             </p>
             <h6><strong>.filter()</strong></h6>
             <p>
+              Can be used to sift through values in an array. Say you have a function that will return "true" if a person's age is greater than 25. If you were given a list of different ages and you didn't want to go through all of them individually, you could use <code>.filter()</code> with the function and in return you'd get a list of all the ages over 25 (presented in an array). E.g. <pre><code>var ages = [40, 12, 26, 31];
+
+  function checkAge(age) {
+      return age > 25;
+  }
+
+  function myFunction() {
+      document.getElementById("demo").innerHTML = ages.filter(checkAge);
+  }</code></pre>
+              The result here will be <code>40, 26, 31</code>
             </p>
             <h6><strong>.reduce()</strong></h6>
             <p>
+              <code>.reduce()</code> can be used to reduce an array of values to a single result. 
             </p>
           </div>
           </div>
