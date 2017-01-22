@@ -81,16 +81,16 @@
             <div class="ten columns offset-by-one">
             <h4>That time I got stuck</h4>
             <p>
-              I've been told "there is no magic in programming", and once you realise that it becomes a whole lot easier to solve problems. i.e. the function you wrote is returning an error message because you've forgotten a semicolon, not because your computer has somehow gained sentience and has decided to behave different from all other computers.
+              I've been told "there is no magic in programming", and once you realise that it becomes a whole lot easier to solve problems. i.e. the function you wrote is returning an error message because you've forgotten a semicolon, not because your computer has somehow gained sentience and has decided to do its own thing.
             </p>
             <p>
-              The "no magic" thing seems like a good place to start, but it didn't prevent me from going in circles for two hours the other day when I was stuck on an assignment. I was trying to select all the elements in an array using the <code>.children</code>property, then loop through each element using a for loop and <code>classList.contains</code> to check for certain class properties. I was pretty I was using the right language, but it wasn't working and I had no idea why.
+              The "no magic" rule seems like a good place to start, but it didn't prevent me from getting stuck on an assignment for two hours the other day. I was trying to select all the elements in an array using the <code>.children</code>property, then loop through each element using a <code>for loop</code> and <code>classList.contains</code> to check for certain class properties. I was pretty sure I was using the right language, but it wasn't working and I had no idea why.
             </p>
             <p>
-              I spent a while googling key concepts, but that didn't give me an answer. I then tried googling the error message, but that didn't help either. So I tried a mixture of pseudocode and the "rubber ducky" method (where you describe the problem you're having to an inanimate object like a rubber duck, except I was working in a room filled with other people and didn't want to look crazy so I typed my explanation in a blank email).
+              I spent a good while googling key concepts, but that didn't give me an answer. I then tried googling the error message, but that didn't help either. So I tried a mixture of pseudocode and the "rubber ducky" method (where you describe the problem you're having to an inanimate object like a rubber duck, except I was working in a room filled with other people and didn't want to look crazy so I typed my explanation into a blank email).
             </p>
             <p>
-              By the time I had typed out 80% of the problem I was trying to solve, I felt like I knew the topic pretty well. I was also pretty sure I was on the right track with my answer. So I turned back to my code with fresh eyes, and - </p><pre>  there
+              By the time I had described out 80% of the problem I was trying to solve, I felt like I knew the topic pretty well. I also felt pretty sure that I was on the right track with my answer. So I turned back to my code with fresh eyes, and immediately saw - </p><pre>  there
 
          was
 
@@ -98,9 +98,8 @@
 
                   closing
 
-                           bracket.
-              </pre>
-              *Sigh* How did I miss that? Compare that to earlier this week when I had to work through this problem -
+                           bracket.</pre>
+              *Sigh* How did I miss that? Anyway, I had a much easier time with this problem:
             <p></p>
             <p>
               <em>Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.</em>
@@ -109,7 +108,7 @@
               <em>When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).</em>
             </p>
             <p>
-              I started by breaking it down into pieces of pseudocode (e.g. if number divides by 3 and 5, print 'FizzBuzz') and asking myself lots of questions (e.g. how do you work out if a number divides by another number?). I came up with the following solution: </p><pre><code>for (var count = 1; count &lt; 101; count++) {
+              I started by breaking it down into pieces of pseudocode (e.g. if number divides by 3 and 5, print 'FizzBuzz') and asking myself lots of questions (e.g. how do you work out if a number divides by another number?). I came up with the following: <pre><code>for (var count = 1; count &lt; 101; count++) {
   if ((count % 5) + (count % 3) === 0) {
     console.log("FizzBuzz");
   } else if (count % 3 === 0) {
@@ -119,18 +118,56 @@
   } else {
     console.log(count);
   }
-}</code>
+}</code></pre>
 
-              </pre>
-            <p></p>
+              I've found pseudocode quite useful for getting my head around problems (even short problems like this). Below are some other problem-solving techniques we've been introduced to (if pseudocode isn't your thing).
+            </p>
 
             <h4>Problem-solving techniques</h4>
             <p>
+              <ul>
+                <li>
+                  <strong>Pseudocode</strong> - describing what the computer must do in your own words rather than a programming language. Good for when the jargon is muddling your thinking.
+                </li>
+                <li>
+                  <strong>Trying something</strong> - As simple as it sounds. Just try something - even if it's only a small part of what you're hoping to achieve - and build confidence from there.
+                </li>
+                <li>
+                  <strong>Rubber ducky method</strong> - confide in an inanimate object. By the time you've finished describing your problem to the rubber duck (or whatever object you choose), you'll hopefully have a much better understanding of it.
+                </li>
+                <li>
+                  <strong>Reading error messages</strong> - read the error message and try and understand it. If you don't, copy and paste it into google. If you still don't, try another method.
+                </li>
+                <li>
+                  <strong>Console.logging</strong> - get your computer to print the result it's come up with at different points of the program and you'll be able to pinpoint what-went-wrong-where more easily.
+                </li>
+                <li>
+                  <strong>Googling</strong> - exactly what it sounds like. I've been impressed with how many information-packed sources there are online.
+                </li>
+                <li>
+                  <strong>Asking your peers for help</strong> - they might have just spent an hour stuck on the same problem as you, and know your pain.
+                </li>
+                <li>
+                  <strong>Asking your coaches for help</strong> - if your peers don't know, ask the experts.
+                </li>
+                <li>
+                  <strong>Improving your process with reflection</strong> - I feel like this is something that will help you get better at solving problems over time, rather than an in-the-moment aid, but worth keeping in mind.
+                </li>
+              </ul>
 
             </p>
             <h4>3 JavaScript functions broken down</h4>
             <p>
-
+              In case you wanted to know a bit more about JavaScript, here are three functions summarised in (what I hope is) plain English:
+            </p>
+            <h6><strong>.map()</strong></h6>
+            <p>
+            </p>
+            <h6><strong>.filter()</strong></h6>
+            <p>
+            </p>
+            <h6><strong>.reduce()</strong></h6>
+            <p>
             </p>
           </div>
           </div>
