@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Syntactic Sugar</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://use.fontawesome.com/36173e56be.js"></script>
+
+    <!-- Font
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet"  type="text/css"/>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <link rel="stylesheet" href="../styles/main.css"/>
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" href="../images/lollipopfavicon.ico">
+
+  </head>
+  <body>
+
+    <div class="title-section">
+      <div class="container">
+        <div class="row">
+          <div class="three columns">
+            <h3 class="icon-bubble"><a href="https://github.com/alex-blair"><i class="fa fa-github-alt icon" aria-hidden="true"></i></a></h3>
+          </div>
+          <div class="six columns">
+            <h1 class="title-bubble"><a class="white-link" href = "../index.html">Syntactic Sugar</a></h1>
+          </div>
+          <div class="three columns">
+            <h3 class="icon-bubble"><a href="https://www.instagram.com/alexandrablair/"><i class="fa fa-instagram icon" aria-hidden="true"></i></a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-title-section">
+      <div class="container">
+        <div class="row">
+          <div class="ten columns offset-by-one">
+            <h3>Javascript Operators</h3>
+            <h5>Week 6 | 26 January 2017</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-image-section">
+      <div class="container">
+        <div class="row">
+          <div class="ten columns offset-by-one">
+            <h4 class="quote"></h4>
+            <h5 class="quote-author"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-middle blog-posts">
+      <div class="container">
+        <div class="row">
+          <div class="ten columns offset-by-one">
+            <h4>Five JS operators and when to use them</h4>
+            <h6><strong>1. Parentheses </strong><code>()</code></h6>
+            <p>
+              <ul>
+                <li>
+                  Grouping - allows expressions with lower precedence to be evaluated before an expression with higher priority. E.g. <code>total = (5 + 5) * 5</code> equates to 50, as opposed to <code>total = 5 + 5 * 5</code> which equates to 30.
+                </li>
+                <li>
+                  Function call - used to call a function. If a number or value is included inside the parentheses, that value will be passed to the function. E.g. <pre><code>function equation (a, b) {
+  total = a + b
+  console.log(total)
+}
+
+equation(4, 6) // 10
+</code></pre>
+                </li>
+                <li>
+                 Placeholders for data
+                </li>
+              </ul>
+            </p>
+            <h6><strong>2. Brackets </strong><code>[]</code></h6>
+            <p>
+              <ul>
+                <li>
+                  Property accessor - used to access an object's properties. <br />
+                  e.g.1 when the property name is contained in a variable: <pre><code>var crunchyFruit = "fruit1"
+
+var fruit = {
+  fruit1: "apple",
+  fruit2: "banana",
+  fruit3: "orange"
+  }
+
+var chosenFruit = fruit[crunchyFruit]
+console.log(chosenFruit) // apple</code></pre>
+
+
+                  e.g.2 when the property name contains characters not permitted in identifiers (e.g. starts with a digit, or contains a space or dash): <pre><code>var object = {
+  "first item": "fork",
+  "second item": "knife"
+}
+console.log (Object["first item"]) // fork</code></pre>
+                </li>
+                <li>
+                  Arrays - used to notate an array e.g. <pre><code>var array = [3,4,5];
+array.length; //3</code></pre>
+                </li>
+              </ul>
+            </p>
+            <h6><strong>3. Braces </strong><code>{}</code></h6>
+            <p>
+              <ul>
+                <li>
+                  Objects - used to notate an object e.g. <pre><code>var object = {
+  item1: coffee,
+  item2: cake
+}</code></pre>
+                </li>
+                <li>
+                  Block statements - commonly used with control flow statements such as <code>for</code> and <code>if</code> e.g. <pre><code>if (hour < 18) {
+    console.log("Have a nice day");
+} else {
+    console.log("Have a nice evening");
+}</code></pre>
+                </li>
+              </ul>
+            </p>
+            <h6><strong>4. Single quotes </strong><code>''</code></h6>
+            <p>
+              <ul>
+                <li>
+                  Where a string contains double quotes - e.g. <code>alert('Say "Hello"');</code>
+                </li>
+              </ul>
+            </p>
+            <h6><strong>5. Double quotes </strong><code>""</code></h6>
+            <p>
+              <ul>
+                <li>
+                  Where a string contains single quotes - e.g. <code>alert("Say 'Hello'");</code>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
