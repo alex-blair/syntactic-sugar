@@ -80,14 +80,16 @@
 /* Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .quote {
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Josefin Slab', serif;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
 .quote-author {
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Josefin Slab', serif;
   margin-bottom: 0;
   text-align: right;
+  font-size: 2rem;
 }
 
 /* Icons
