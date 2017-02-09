@@ -87,33 +87,29 @@
               If you've never heard of scope before, you can think of the "visibility" thing like fame.
             </p>
             <p>
-              Say you have two Taylors: one is Taylor Swift, and the other is Taylor Small. Taylor Small is known locally, but not beyond the borders of town. Taylor Swift meanwhile is famous globally. People have heard of her all around the world.
+              Say you have two Taylors: one is Taylor Swift, and the other is Taylor Small. Taylor Small is known locally, but not beyond the borders of her town. Taylor Swift meanwhile is famous globally. People all around the world have heard of her.
             </p>
             <h4>How does it work?</h4>
             <p>
-              A global variable is one that has been declared outside a function or block. Functions create local scope. Each function's scope is separate, so whatever you do in one function won't affect what you do in another.
-            </p>
-            <p>
-              The variables you've declared globally (outside a function) are visible in the local scope, but the variables you've declared in a function aren't visible in the global scope.
+              A global variable is one that has been declared outside a function or block. Variables that are declared globally are visible in the local scope, but variables declared inside a function (local variables) aren't visible in the global scope.
             </p>
             E.g. <pre><code>var taylorSwift = "famous"
+
 function fameCheck(name) {
   var taylorSmall = "not so famous"
   console.log(name)
 }
+
 fameCheck(taylorSwift) // famous
 fameCheck(taylorSmall) // taylorSmall is not defined</code></pre>
             <p>
-              In the example above, taylorSwift is a global variable, while taylorSmall is a local variable. When you try to call the function with the variable taylorSmall you get an error message, because the value of taylorSmall isn't visible outside the local scope.
+              In the example above, taylorSwift is a global variable, while taylorSmall is a local variable. When you try to call the function with the variable taylorSmall you get an error message, because taylorSmall isn't visible in the global scope.
             </p>
             <p>
-              Variables that are declared globally (outside a function) are visible in the local scope, but variables declared in a function aren't visible in the global scope. 
+              Functions create local scope. Each function's scope is separate, so whatever you do in one function won't affect what you do in another.
             </p>
             <p>
-              Whenever you have a function you've got local scope. This applies to functions that are nested within functions as well (so you can create local scope within local scope).
-            </p>
-            <p>
-              So that leaves block scope. A "block" is a section of code, like the bit of code between the opening and closing braces of an <code>if</code> statement. You can use "let" or "const" to create block-scoped variables. For these variables, the braces <code>{...}</code> define a new scope. When you set one of these variables to a particular value, the value applies only to the scope in which it is set. The example below, taken from <a class="reference" href="https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.94).aspx">this resource</a>, shows why <code>let</code> is useful:<pre><code>let x = 10;
+              So that leaves block scope. A "block" is a section of code, like the piece of code between the opening and closing braces of an <code>if</code> statement. You can use "let" or "const" to create block-scoped variables. For these variables, the braces <code>{...}</code> define a new scope. When you set one of these variables to a particular value, the value applies only to the scope in which it is set. The example below, taken from <a class="reference" href="https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.94).aspx">this resource</a>, shows how <code>let</code> works and why it is useful:<pre><code>let x = 10;
 var y = 10;
 {
     let x = 5;
